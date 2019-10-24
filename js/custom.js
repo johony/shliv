@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.douban_item').each(function () {
         var id = $(this).attr('date-dbid').toString();
         if (id.length < 9) {
-            var url = "https://api.douban.com/v2/movie/subject/" + id + "?apikey=0b2bdeda43b5688921839c8ecb20399b";
+            var url = "https://api.douban.com/v2/movie/subject/" + id + "?apikey=0dad551ec0f84ed02907ff5c42e8ec70";
             $.ajax({
                 url: url,
                 type: 'GET',
@@ -26,7 +26,7 @@ $(document).ready(function () {
                         "</time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" +
                         data.summary +
                         "</section></div></div><div class='post-preview--image' style='background-image:url(" + data.images
-                        .large + ");'></div>");
+                        .small + ");'></div>");
                 }
             });
         } else if (id.length > 9) {
@@ -48,7 +48,7 @@ $(document).ready(function () {
                         "</time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" +
                         data.summary +
                         "</section></div></div><div class='post-preview--image' style='background-image:url(" + data.images
-                        .large + ");'></div>");
+                        .small + ");'></div>");
                 }
             });
         } else {
