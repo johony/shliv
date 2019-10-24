@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.douban_item').each(function () {
         var id = $(this).attr('date-dbid').toString();
         if (id.length < 9) {
-            var url = "https://api.douban.com/v2/movie/subject/" + id + "?apikey=0dad551ec0f84ed02907ff5c42e8ec70";
+            var url = "https://api.douban.com/v2/movie/subject/" + id + "?apikey=0b2bdeda43b5688921839c8ecb20399b";
             $.ajax({
                 url: url,
                 type: 'GET',
