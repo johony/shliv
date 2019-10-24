@@ -26,7 +26,8 @@ $(document).ready(function () {
                         "</time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" +
                         data.summary +
                         "</section></div></div><div class='post-preview--image' style='background-image:url(" + data.images
-                        .large + ");'></div>");
+                        .large + ");'><img src='data.images
+                        .large + 'rel="noreferrer"' /></div>");
                 }
             });
         } else if (id.length > 9) {
